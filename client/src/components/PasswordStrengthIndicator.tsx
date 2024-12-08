@@ -1,9 +1,6 @@
-import React from 'react'
+
 import { calculatePasswordStrength } from '../utils/validation';
 
-interface PasswordStrengthIndicatorProps {
-    password: string;
-}
 const PasswordStrengthIndicator = ({ password }: { password: string }) => {
     const strength = calculatePasswordStrength(password);
     const getStrengthText = () => {
